@@ -126,7 +126,7 @@ h2.tt{font-family:var(--serif);font-weight:300;font-size:clamp(3.5rem,13vw,10rem
 .work h2{text-align:center;margin-bottom:clamp(40px,7vw,90px)}
 .work h2 em{font-style:italic;color:var(--red)}
 .cards{max-width:1200px;margin:auto}
-.cwrap{position:relative;padding-bottom:20vh}
+.cwrap{min-height:88vh;position:relative}
 .card{position:sticky;top:calc(80px + var(--i)*26px);transform-origin:top center;border:1px solid #3a3a3a;border-radius:36px;background:var(--ink);padding:clamp(18px,2.6vw,36px);display:flex;flex-direction:column;gap:20px;min-height:72vh}
 .card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
 .card-top .meta{display:flex;gap:clamp(16px,3vw,40px);align-items:flex-start}
@@ -141,7 +141,7 @@ h2.tt{font-family:var(--serif);font-weight:300;font-size:clamp(3.5rem,13vw,10rem
 .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .card.short .card-body{align-items:center;justify-content:center;column-gap:clamp(32px,7vw,110px)}
 .card.short .frames{display:contents}
-.card.short .frames>div{min-height:0;height:min(56vh,520px);width:100%}
+.card.short .frames>div{min-height:0;height:min(62vh,540px);width:100%}
 .desc,.card-top .note{max-width:560px;color:#bdbbb4;font-size:clamp(.92rem,1.3vw,1.02rem);font-weight:300;line-height:1.7;border-left:1px solid var(--ac);padding-left:18px}
 .desc{align-self:center}
 .card-top .note{margin-top:22px}
@@ -150,14 +150,14 @@ h2.tt{font-family:var(--serif);font-weight:300;font-size:clamp(3.5rem,13vw,10rem
 .yt-fb{position:absolute;inset:0;display:grid;place-items:end center;padding:18px;background:center/cover no-repeat;color:#f2f0ea;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase}
 .yt-fb::before{content:"▶";position:absolute;inset:0;display:grid;place-items:center;font-size:3rem;background:rgba(0,0,0,.38)}
 .yt-fb span{position:relative}
-.player.vert{aspect-ratio:9/16;height:min(56vh,520px);min-height:0;justify-self:center}
+.player.vert{aspect-ratio:9/16;height:min(62vh,540px);min-height:0;justify-self:center}
 .player .bl{position:absolute;inset:-28px;background:center/cover no-repeat;filter:blur(16px) brightness(.55) saturate(1.1)}
 .player .ph{position:relative;z-index:1;color:#f2f0ea;font-size:.65rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gray);text-align:center;padding:16px}
 .frames{display:grid;grid-template-rows:1fr 1fr;gap:16px}
 .frames div{border-radius:24px;background:linear-gradient(135deg,#232323,#1a1d24);display:grid;place-items:center;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:#5a5a5a;min-height:100px}
 .frames .img{background-size:cover;background-position:center}
 .tile::after{text-shadow:0 1px 6px rgba(0,0,0,.7);color:#d9d7d0}
-@media(max-width:760px){.card.short .card-body{grid-template-columns:1fr;row-gap:24px}.card.short .desc{max-width:none;justify-self:center}.card.short .player.vert{grid-column:1/-1}.card.short .frames>div{height:auto;aspect-ratio:9/16}.player.vert{height:auto;width:min(100%,300px)}.card-body{grid-template-columns:1fr}.frames{grid-template-rows:none;grid-template-columns:1fr 1fr}.cwrap{padding-bottom:0;margin-bottom:24px}.card{position:relative;top:auto}}
+@media(max-width:760px){.card.short .card-body{grid-template-columns:1fr;row-gap:24px}.card.short .desc{max-width:none;justify-self:center}.card.short .player.vert{grid-column:1/-1}.card.short .frames>div{height:auto;aspect-ratio:9/16}.player.vert{height:auto;width:min(100%,300px)}.card-body{grid-template-columns:minmax(0,1fr)}.player{min-height:0}.frames{grid-template-rows:none;grid-template-columns:1fr 1fr}.cwrap{height:auto;margin-bottom:24px}.card{position:relative;top:auto}}
 
 /* ARQUIVO */
 .archive{max-width:1200px;margin:clamp(60px,9vw,120px) auto 0}
@@ -261,7 +261,7 @@ h2.tt{font-family:var(--serif);font-weight:300;font-size:clamp(3.5rem,13vw,10rem
       <div class="card-top"><div class="meta"><div><p class="kicker id">WORK <span>003</span></p><h3 class="type">Eventos em tempo real</h3><p class="proj">Doya · Tudo em Realtime</p><p class="note">After movie de um evento de pagode. Passar a vibe da festa com agilidade e dinamismo, para vender o evento e valorizar os patrocinadores.</p></div></div></div>
       <div class="card-body"><div class="player" data-url="https://youtu.be/TGRS2RE0UCU"><span class="ph">Carregando vídeo</span></div><div class="frames"><div class="img" style="background-image:url(img/doya-1.jpg)" role="img" aria-label="Festival ao ar livre visto de cima, com palco e público"></div><div class="img" style="background-image:url(img/doya-2.jpg)" role="img" aria-label="Palco de um evento, com estrutura de luz e equipe"></div></div></div>
     </article></div>
-    <div class="cwrap" style="padding-bottom:0"><article class="card" style="--i:3;--ac:var(--green)">
+    <div class="cwrap" style="height:auto"><article class="card" style="--i:3;--ac:var(--green)">
       <div class="card-top"><div class="meta"><div><p class="kicker id">FILM <span>001</span></p><h3 class="type">Média-metragem</h3><p class="proj">Seus Olhos, Meu Amor · 2026</p><p class="note">Meu trabalho de conclusão de curso na UESB, apresentado em 2026. Disponível em breve.</p></div></div></div>
       <div class="card-body"><div class="player" data-yt=""><div class="bl" style="background-image:url(img/tcc-tranca.jpg)"></div><span class="ph">Trailer em breve</span></div><div class="frames"><div class="img" style="background-image:url(img/tcc-olhos.jpg)" role="img" aria-label="Making of: close no olhar de uma atriz"></div><div class="img" style="background-image:url(img/tcc-cena.jpg)" role="img" aria-label="Making of: cena no quarto"></div></div></div>
     </article></div>
@@ -376,7 +376,7 @@ const LOCAL=location.protocol==='file:'; // o YouTube recusa embeds (erro 153) e
   f.title='';f.tabIndex=-1;f.setAttribute('allow','autoplay; encrypted-media');f.setAttribute('referrerpolicy','strict-origin-when-cross-origin');
   addEventListener('message',e=>{if(e.source!==f.contentWindow)return;let d;try{d=typeof e.data==='string'?JSON.parse(e.data):e.data}catch(_){return}
     const st=d&&d.info&&d.info.playerState;if(st===1){box.classList.add('on');box.parentElement.classList.add('vid')}});
-  f.addEventListener('load',()=>{const ping=()=>f.contentWindow.postMessage(JSON.stringify({event:'listening',id:1,channel:'widget'}),'*');ping();setTimeout(ping,1000);setTimeout(ping,2500)});
+  f.addEventListener('load',()=>{let n=0;const send=o=>{try{f.contentWindow.postMessage(JSON.stringify(o),'*')}catch(_){}};const t=setInterval(()=>{if(box.classList.contains('on')||++n>40){clearInterval(t);return}send({event:'listening',id:1,channel:'widget'});send({event:'command',func:'playVideo',args:[]})},500)});
   box.appendChild(f)})();
 
 // vídeos do YouTube (não listados)
